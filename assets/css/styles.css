@@ -29,11 +29,14 @@ body {
     font-weight: normal;
     font-style: normal;
     overflow-x: hidden;
-}
-
-html {
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
+
+html:focus-within {
+    
+    -webkit-scroll-behavior: smooth
+  }
 
 body.dark {
     transition: all 0.3s ease-out 0s;
